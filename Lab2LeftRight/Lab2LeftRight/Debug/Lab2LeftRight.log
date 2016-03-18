@@ -1,3 +1,11 @@
 ﻿  MyForm.cpp
-  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
-  Lab2LeftRight.vcxproj -> C:\Users\Dell\Documents\Visual Studio 2015\Projects\Lab2LeftRight\Debug\Lab2LeftRight.exe
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(169): error C2065: 'location': undeclared identifier
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(169): error C2228: left of '.lc1' must have class/struct/union
+  c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(169): note: type is 'unknown-type'
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(169): error C2228: left of '.lc2' must have class/struct/union
+  c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(169): note: type is 'unknown-type'
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(179): error C2065: 'location': undeclared identifier
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(179): error C2228: left of '.lc1' must have class/struct/union
+  c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(179): note: type is 'unknown-type'
+c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(179): error C2228: left of '.lc2' must have class/struct/union
+  c:\users\dell\documents\github\leftrightupdown\lab2leftright\lab2leftright\MyForm.h(179): note: type is 'unknown-type'

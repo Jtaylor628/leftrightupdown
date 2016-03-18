@@ -10,8 +10,10 @@ namespace Lab2LeftRight {
 	using namespace System::Drawing;
 	
 	
-	struct PicLocation {
+	ref struct PicLocation {
+	
 		int lc1;
+		
 		int lc2;
 		int lc3;
 		int lc4;
@@ -33,6 +35,7 @@ namespace Lab2LeftRight {
 			//
 
 		}
+		
 
 	protected:
 		/// <summary>
@@ -146,28 +149,33 @@ namespace Lab2LeftRight {
 
 		
 #pragma endregion
-
+		
 		
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 		g = pictureBox1->CreateGraphics();
+
+		PicLocation location;
 		
+		location.lc1 = 24;
+		location.lc2 = 50;
+		
+		int x = location.lc1;
+
+		location.lc3 = 450;
+		location.lc4 = 24;
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		PicLocation location;
-		location.lc1 = 24;
-		location.lc2 = 50;
+		pictureBox1->Refresh();
 		Bitmap^ bmp = gcnew Bitmap(L"DWCeagle.bmp");
 		g->DrawImage(bmp, 0, 0);
 
 		//int x = 100, y = 0;
-		pictureBox1->Location = Point(location.lc1, location.lc2);
+		pictureBox1->Location = Point(location.l1, location.lc2);
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		PicLocation location;
-		location.lc1 = 450;
-		location.lc2 = 24;
+		
 		
 		Bitmap^ bmp = gcnew Bitmap(L"DWCeagle.bmp");
 		g->DrawImage(bmp, 0, 0);
@@ -180,9 +188,7 @@ namespace Lab2LeftRight {
 
 	}
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-	PicLocation location;
-	location.lc1 = 243;
-	location.lc2 = 240;
+	
 
 	Bitmap^ bmp = gcnew Bitmap(L"DWCeagle.bmp");
 	g->DrawImage(bmp, 0, 0);
@@ -193,9 +199,7 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 
-	PicLocation location;
-	location.lc1 = 234;
-	location.lc2 = 15;
+	
 
 	Bitmap^ bmp = gcnew Bitmap(L"DWCeagle.bmp");
 	g->DrawImage(bmp, 0, 0);
@@ -203,5 +207,6 @@ private: System::Void button4_Click(System::Object^  sender, System::EventArgs^ 
 	//int x = 100, y = 0;
 	pictureBox1->Location = Point(location.lc1, location.lc2);
 }
+		
 };
 }
